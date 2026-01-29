@@ -13,10 +13,10 @@ jobs:
         run: npm ci
       - name: Install Playwright
         run: npx playwright install --with-deps
-      - name: Run headed browser
-        run: xvfb-run npx playwright test    
-      - name: Run your tests
-        run: npx playwright test tests/home.spec.ts
+      - name: Run your tests as virtual headed browser
+        run: xvfb-run npx playwright test tests/home.spec.ts    
+      # - name: Run your tests
+      #   run: npx playwright test tests/home.spec.ts
       - name: Upload test Results
         if:  always()
         uses: actions/upload-artifact@v4
