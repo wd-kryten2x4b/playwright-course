@@ -11,8 +11,6 @@ jobs:
           node-version: '24' #found by running node v in terminal
       - name: Install dependencies
         run: npm ci
-#      - name: Install Playwright Test # this was added due to an error where @playwright/test was not found
- #       run: npm install @playwright/test # this it the command to run
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run your tests
