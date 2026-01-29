@@ -3,16 +3,16 @@ on: [push]
 jobs:
   test-e2e:
     name: Run E2E tests
-    runs-on: ubuntu-latest
+    runs-on: windows-latest # set to either ubuntu-latest (for Linux) or windows-latest (for windows)
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v2
         with:
-          node-version: '24'
-      - name: Install latest
-        run: 'npm i -g npm@latest'
-      - name: Install Playwright Test
-        run: npm install @playwright/test
+          node-version: '24' #found by running node v in terminal
+      - name: Install latest npm #this is rather than Install dependencies
+        run: 'npm i -g npm@latest' # this is rather than npm ci
+      - name: Install Playwright Test # this was added due to an error where @playwright/test was not found
+        run: npm install @playwright/test # this it the command to run
       - name: Install Playwright
         run: npx playwright install --with-deps
       - name: Run your tests
