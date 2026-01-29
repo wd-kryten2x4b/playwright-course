@@ -1,8 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","13739","Open About and Verify Titles","chromium","2026-01-28","passed","2026-01-28","Home","home.spec.ts","",""
-"","13154","Verify Home link is enabled using Text & CSS selectors","chromium","2026-01-28","passed","2026-01-28","Home","home.spec.ts","",""
-"","12891","Verify Heading text is visible using Text selector","chromium","2026-01-28","passed","2026-01-28","Home","home.spec.ts","",""
-"","13269","Verify Text for all nav links","chromium","2026-01-28","failed","2026-01-28","Home","home.spec.ts","",""
-"","12480","Verify Search Icon is visible using XPath selector","chromium","2026-01-28","passed","2026-01-28","Home","home.spec.ts","",""
-"","12375","Open HomePage and Verify Titles","chromium","2026-01-28","passed","2026-01-28","Home","home.spec.ts","",""
-"","12408","Click Get Started Button using CSS selector","chromium","2026-01-28","passed","2026-01-28","Home","home.spec.ts","",""
