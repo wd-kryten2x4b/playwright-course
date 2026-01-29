@@ -10,7 +10,8 @@ jobs:
         with:
           node-version: '24' #found by running node v in terminal
       - name: Install latest npm #this is rather than Install dependencies
-        run: 'npm i -g npm@latest' # this is rather than npm ci
+        run: npm ci
+ #     run: 'npm i -g npm@latest' # this is rather than npm ci
       - name: Install Playwright Test # this was added due to an error where @playwright/test was not found
         run: npm install @playwright/test # this it the command to run
       - name: Install Playwright
