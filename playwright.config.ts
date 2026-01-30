@@ -43,7 +43,7 @@ export default defineConfig({
     baseURL: 'https://practice.sdetunicorns.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'retain-on-failure', //original option on-first-retry
+    trace: 'on', //original option on-first-retry
         
   //add the staorage state file items
   storageState: 'loggedInState.json' 
